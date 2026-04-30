@@ -1887,3 +1887,7 @@ COOKIE PANEL
   opacity: 0 !important;
   pointer-events: none !important;
 }
+
+[hidden] {
+  display: none !important;
+}

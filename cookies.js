@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
   function getCookiePreferences() {
     try {
       return JSON.parse(localStorage.getItem(COOKIE_STORAGE_KEY));
-    } catch (e) {
+    } catch {
       return null;
     }
   }
@@ -40,36 +40,36 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function showCookieBanner() {
     if (!cookieBanner) return;
-    cookieBanner.hidden = false;
+    cookieBanner.removeAttribute("hidden");
     cookieBanner.classList.remove("is-hidden");
-    cookieBanner.style.display = "";
+    cookieBanner.style.display = "block";
   }
-  
+
   function hideCookieBanner() {
     if (!cookieBanner) return;
-    cookieBanner.hidden = true;
+    cookieBanner.setAttribute("hidden", "");
     cookieBanner.classList.add("is-hidden");
     cookieBanner.style.display = "none";
   }
-  
+
   function openCookiePanel() {
     if (!cookiePanel) return;
-  
+
     const prefs = getCookiePreferences();
     if (analyticsToggle) {
       analyticsToggle.checked = !!prefs?.analytics;
     }
-  
-    cookiePanel.hidden = false;
+
+    cookiePanel.removeAttribute("hidden");
     cookiePanel.classList.remove("is-hidden");
-    cookiePanel.style.display = "";
+    cookiePanel.style.display = "grid";
     document.body.classList.add("modal-open");
   }
-  
+
   function closeCookiePanel() {
     if (!cookiePanel) return;
-  
-    cookiePanel.hidden = true;
+
+    cookiePanel.setAttribute("hidden", "");
     cookiePanel.classList.add("is-hidden");
     cookiePanel.style.display = "none";
     document.body.classList.remove("modal-open");
@@ -79,21 +79,30 @@ document.addEventListener("DOMContentLoaded", () => {
     if (gaLoaded) return;
     if (!GA_MEASUREMENT_ID) return;
 
+    // Evita duplicados si ya existe script cargado
+    const existingScript = document.querySelector(
+      `script[src*="gtag/js?id=${GA_MEASUREMENT_ID}"]`
+    );
+    if (existingScript) {
+      gaLoaded = true;
+      console.log("Google Analytics ya estaba cargado");
+      return;
+    }
+
     gaLoaded = true;
 
     window.dataLayer = window.dataLayer || [];
-    function gtag() {
+    window.gtag = window.gtag || function () {
       dataLayer.push(arguments);
-    }
-    window.gtag = gtag;
+    };
 
     const script = document.createElement("script");
     script.async = true;
     script.src = `https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`;
     document.head.appendChild(script);
 
-    gtag("js", new Date());
-    gtag("config", GA_MEASUREMENT_ID, {
+    window.gtag("js", new Date());
+    window.gtag("config", GA_MEASUREMENT_ID, {
       anonymize_ip: true
     });
 
@@ -119,8 +128,6 @@ document.addEventListener("DOMContentLoaded", () => {
         analytics: true
       });
     });
-  } else {
-    console.warn("No existe #cookie-accept");
   }
 
   if (btnReject) {
