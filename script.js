@@ -1135,7 +1135,7 @@ if (currentYearEl) {
 // COOKIES / CONSENT
 // =========================
 const COOKIE_STORAGE_KEY = "xtrafocus_cookie_preferences_v1";
-const GA_MEASUREMENT_ID = "G-LTPYRZ690W"; // <-- CAMBIA ESTO
+const GA_MEASUREMENT_ID = "G-LTPYRZ690W";
 
 function getCookiePreferences() {
   try {
