@@ -39,28 +39,39 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   function showCookieBanner() {
-    if (cookieBanner) cookieBanner.hidden = false;
+    if (!cookieBanner) return;
+    cookieBanner.hidden = false;
+    cookieBanner.classList.remove("is-hidden");
+    cookieBanner.style.display = "";
   }
-
+  
   function hideCookieBanner() {
-    if (cookieBanner) cookieBanner.hidden = true;
+    if (!cookieBanner) return;
+    cookieBanner.hidden = true;
+    cookieBanner.classList.add("is-hidden");
+    cookieBanner.style.display = "none";
   }
-
+  
   function openCookiePanel() {
     if (!cookiePanel) return;
-
+  
     const prefs = getCookiePreferences();
     if (analyticsToggle) {
       analyticsToggle.checked = !!prefs?.analytics;
     }
-
+  
     cookiePanel.hidden = false;
+    cookiePanel.classList.remove("is-hidden");
+    cookiePanel.style.display = "";
     document.body.classList.add("modal-open");
   }
-
+  
   function closeCookiePanel() {
     if (!cookiePanel) return;
+  
     cookiePanel.hidden = true;
+    cookiePanel.classList.add("is-hidden");
+    cookiePanel.style.display = "none";
     document.body.classList.remove("modal-open");
   }
 
