@@ -135,7 +135,7 @@ textarea {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 18px;
+  gap: 40px;
   min-height: 76px;
   padding: 12px 18px;
   border: 1px solid var(--line);
@@ -154,11 +154,12 @@ textarea {
 }
 
 .brand-mark {
-  width: 16px;
-  height: 40px;
-  border-radius: 999px;
-  background: var(--grad-main);
-  box-shadow: 0 0 24px rgba(103, 232, 249, 0.55);
+  width: 50px; /* Tamaño del logo */
+  height: auto;
+  filter: drop-shadow(0 0 15px rgba(103, 232, 249, 0.6));
+  background: none;
+  border-radius: 0;
+  display: block;
 }
 
 .brand-text {
