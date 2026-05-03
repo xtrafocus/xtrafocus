@@ -1,0 +1,1183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>XTRA FOCUS | Financial Decision Lab</title>
+  <meta
+    name="description"
+    content="Simula decisiones financieras reales: libertad financiera, inversión, alquiler vs compra, sueldo, coche y más."
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@500;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="icon" type="image/png" href="favivon.png">   
+  <link rel="stylesheet" href="styles.css" />
+</head> 
+<body>
+  <div class="bg-orb bg-orb-1"></div>
+  <div class="bg-orb bg-orb-2"></div>
+  <div class="bg-grid"></div>
+  <div class="bg-noise"></div>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container header-inner">
+        <a href="#" class="brand">
+          <img src="favivon.png" alt="Logo Xtra Focus" class="brand-mark">
+
+          <div class="brand-text">
+            <span class="brand-top">XTRA</span>
+            <span class="brand-bottom">FOCUS</span>
+          </div>
+      </a>
+
+      <nav class="main-nav">
+        <a href="#tools">Herramientas</a>
+        <a href="#paths">Empieza aquí</a>
+        <a href="#how">Cómo funciona</a>
+        <a href="#trust">Metodología</a>
+      </nav>
+
+      <button class="header-cta" data-scroll="#tools">Empezar</button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <div class="eyebrow">Financial Decision Lab</div>
+        <h1>
+          No solo calculadoras.
+          <span>Decisiones financieras</span>
+          que se sienten reales.
+        </h1>
+        <p class="hero-text">
+          Simula el impacto de tus decisiones sobre ahorro, inversión, vivienda,
+          trabajo y libertad financiera en una experiencia visual diseñada para
+          darte claridad.
+        </p>
+
+        <div class="hero-actions">
+          <button class="btn btn-primary" data-open="ruta">
+            Empezar mi hoja de ruta
+          </button>
+          <button class="btn btn-secondary" data-scroll="#tools">
+            Explorar herramientas
+          </button>
+        </div>
+
+        <div class="hero-chips">
+          <span>Sin registro</span>
+          <span>Resultados inmediatos</span>
+          <span>Privado en tu navegador</span>
+          <span>Estimaciones orientativas</span>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="visual-core"></div>
+
+        <div class="floating-card floating-card-main">
+          <div class="fc-top">RUTA FINANCIERA</div>
+          <div class="fc-title">Tu siguiente paso más importante</div>
+          <div class="fc-steps">
+            <span>01 Base</span>
+            <span>02 Ahorro</span>
+            <span>03 Inversión</span>
+          </div>
+        </div>
+
+        <div class="floating-card floating-card-right">
+          <div class="mini-label">Impacto</div>
+          <div class="mini-number">+7 años</div>
+          <div class="mini-sub">antes si ahorras 250€/mes más</div>
+        </div>
+
+        <div class="floating-card floating-card-bottom">
+          <div class="mini-chart">
+            <span></span><span></span><span></span><span></span><span></span>
+          </div>
+          <div>
+            <div class="mini-label">Capital proyectado</div>
+            <div class="mini-sub">Visualiza el coste real de esperar</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRUST BAR -->
+  <section class="trust-bar">
+    <div class="container trust-grid">
+      <div class="trust-item">
+        <strong>7</strong>
+        <span>herramientas interactivas</span>
+      </div>
+      <div class="trust-item">
+        <strong>100%</strong>
+        <span>gratis y sin registro</span>
+      </div>
+      <div class="trust-item">
+        <strong>0</strong>
+        <span>datos guardados por defecto</span>
+      </div>
+      <div class="trust-item">
+        <strong>2 min</strong>
+        <span>para obtener claridad</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- PATHS -->
+  <section class="paths-section" id="paths">
+    <div class="container">
+      <div class="section-head">
+        <div class="section-kicker">Empieza aquí</div>
+        <h2>Elige el camino que más se parece a tu momento actual</h2>
+        <p>No hace falta saber de finanzas. Solo saber qué quieres resolver primero.</p>
+      </div>
+
+      <div class="paths-grid">
+        <article class="path-card">
+          <div class="path-icon">◎</div>
+          <h3>Ordenar mis finanzas</h3>
+          <p>
+            Si no sabes qué priorizar, empieza por una hoja de ruta clara según
+            tu situación actual.
+          </p>
+          <button class="btn btn-ghost" data-open="ruta">Empezar por aquí</button>
+        </article>
+
+        <article class="path-card">
+          <div class="path-icon">△</div>
+          <h3>Tomar una gran decisión</h3>
+          <p>
+            Compara escenarios reales: cambiar de trabajo, comprar vivienda,
+            mantener coche o lanzar un negocio.
+          </p>
+          <button class="btn btn-ghost" data-scroll="#tools">Ver herramientas</button>
+        </article>
+
+        <article class="path-card">
+          <div class="path-icon">✦</div>
+          <h3>Hacer crecer mi patrimonio</h3>
+          <p>
+            Entiende cuánto podrías acumular, cuánto pierdes al esperar y cuándo
+            podrías alcanzar libertad financiera.
+          </p>
+          <button class="btn btn-ghost" data-open="invest">Explorar crecimiento</button>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- TOOLS -->
+  <section class="tools-section" id="tools">
+    <div class="container">
+      <div class="section-head">
+        <div class="section-kicker">Herramientas</div>
+        <h2>Un sistema visual para decidir mejor con tu dinero</h2>
+        <p>
+          No son formularios sueltos. Son módulos para entender el impacto real
+          de tus decisiones.
+        </p>
+      </div>
+
+      <div class="tools-grid">
+        <!-- FEATURED -->
+        <article class="tool-card tool-card-featured" data-open="ruta" tabindex="0">
+          <div class="tool-featured-badge">Recomendado para empezar</div>
+
+          <div class="tool-featured-left">
+            <div class="tool-icon">🧭</div>
+          </div>
+
+          <div class="tool-featured-right">
+            <div class="tool-tag">Diagnóstico personal</div>
+            <h3>Tu hoja de ruta financiera</h3>
+            <p>
+              Responde 7 preguntas y descubre qué deberías priorizar ahora:
+              estabilidad, ahorro, inversión, ingresos o libertad financiera.
+            </p>
+
+            <div class="feature-list">
+              <span>Prioridades claras</span>
+              <span>Pasos accionables</span>
+              <span>Insight personalizado</span>
+            </div>
+
+            <button class="btn btn-primary">
+              Empezar diagnóstico
+            </button>
+          </div>
+        </article>
+
+        <!-- CARD -->
+        <article class="tool-card" data-open="freedom" tabindex="0">
+          <div class="tool-icon">🚀</div>
+          <div class="tool-tag">Libertad financiera</div>
+          <h3>¿Cuándo podrías dejar tu trabajo?</h3>
+          <p>
+            Estima cuánto tiempo te separa de cubrir tus gastos con tu capital e inversiones.
+          </p>
+          <button class="tool-link">Abrir herramienta</button>
+        </article>
+
+        <article class="tool-card" data-open="car" tabindex="0">
+          <div class="tool-icon">🚗</div>
+          <div class="tool-tag">Coste real</div>
+          <h3>¿Cuánto te cuesta tu coche de verdad?</h3>
+          <p>
+            Ve mucho más allá del precio de compra y descubre lo que drena cada año.
+          </p>
+          <button class="tool-link">Abrir herramienta</button>
+        </article>
+
+        <article class="tool-card" data-open="invest" tabindex="0">
+          <div class="tool-icon">📈</div>
+          <div class="tool-tag">Interés compuesto</div>
+          <h3>Si inviertes hoy, ¿qué podrías tener?</h3>
+          <p>
+            Visualiza cómo crece el capital con tiempo, aportaciones y rentabilidad.
+          </p>
+          <button class="tool-link">Abrir herramienta</button>
+        </article>
+
+        <article class="tool-card" data-open="rent" tabindex="0">
+          <div class="tool-icon">🏠</div>
+          <div class="tool-tag">Vivienda</div>
+          <h3>¿Te conviene más alquilar o comprar?</h3>
+          <p>
+            Compara coste total, cuota estimada y horizonte de permanencia.
+          </p>
+          <button class="tool-link">Abrir herramienta</button>
+        </article>
+
+        <article class="tool-card" data-open="sueldos" tabindex="0">
+          <div class="tool-icon">💼</div>
+          <div class="tool-tag">Mercado salarial</div>
+          <h3>¿Cobras bien para tu perfil?</h3>
+          <p>
+            Obtén una estimación orientativa frente a tu sector, ciudad y experiencia.
+          </p>
+          <button class="tool-link">Abrir herramienta</button>
+        </article>
+
+        <!-- SIMULATOR BIG -->
+        <article class="tool-card tool-card-simulator" data-open="simulador" tabindex="0">
+          <div class="simulator-overlay"></div>
+          <div class="tool-tag">What If Engine</div>
+          <h3>¿Y si tomas esa decisión?</h3>
+          <p>
+            Antes de cambiar de trabajo, ahorrar más, empezar tarde a invertir o
+            montar un negocio, simula el impacto y entiende el coste real de actuar… o esperar.
+          </p>
+
+          <div class="sim-pills">
+            <span>Trabajo</span>
+            <span>Negocio</span>
+            <span>Ahorro</span>
+            <span>Inversión</span>
+          </div>
+
+          <button class="btn btn-light">
+            Abrir simulador
+          </button>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW -->
+  <section class="how-section" id="how">
+    <div class="container">
+      <div class="section-head">
+        <div class="section-kicker">Cómo funciona</div>
+        <h2>Claridad rápida para decisiones importantes</h2>
+      </div>
+
+      <div class="how-grid">
+        <article class="how-card">
+          <div class="how-num">01</div>
+          <h3>Introduce tus datos</h3>
+          <p>Solo lo esencial. Sin fricción, sin registros, sin rodeos.</p>
+        </article>
+        <article class="how-card">
+          <div class="how-num">02</div>
+          <h3>Simula escenarios</h3>
+          <p>Entiende cómo cambia tu resultado si gastas, ahorras o inviertes distinto.</p>
+        </article>
+        <article class="how-card">
+          <div class="how-num">03</div>
+          <h3>Obtén siguientes pasos</h3>
+          <p>No solo un número: contexto, interpretación y decisiones recomendadas.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRUST / METHODOLOGY -->
+  <section class="method-section" id="trust">
+    <div class="container method-grid">
+      <div class="method-copy">
+        <div class="section-kicker">Metodología y privacidad</div>
+        <h2>Diseñado para ser útil, no para fingir precisión absoluta</h2>
+        <p>
+          Estas herramientas ofrecen <strong>estimaciones orientativas</strong>
+          basadas en supuestos simplificados. Su objetivo es darte claridad,
+          no sustituir asesoramiento financiero, fiscal o legal profesional.
+        </p>
+      </div>
+
+      <div class="method-points">
+        <div class="method-item">
+          <strong>Privado por defecto</strong>
+          <span>Tus datos no se guardan automáticamente en servidor.</span>
+        </div>
+        <div class="method-item">
+          <strong>Supuestos simplificados</strong>
+          <span>Algunas herramientas usan modelos orientativos para acelerar la decisión.</span>
+        </div>
+        <div class="method-item">
+          <strong>Hecho para comparar</strong>
+          <span>Úsalo como punto de partida para pensar mejor, no como verdad absoluta.</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <div class="footer-brand">XTRA FOCUS</div>
+        <p>
+          Herramientas visuales para entender mejor el impacto de tus decisiones financieras.
+        </p>
+      </div>
+
+      <div class="footer-links">
+        <a href="#tools">Herramientas</a>
+        <a href="#how">Cómo funciona</a>
+        <a href="#trust">Metodología</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- MODAL: RUTA -->
+  <div class="modal-overlay" id="modal-ruta" aria-hidden="true">
+    <div class="modal modal-quiz" role="dialog" aria-modal="true" aria-labelledby="ruta-title">
+      <button class="modal-close" data-close="ruta" aria-label="Cerrar modal">✕</button>
+
+      <div class="quiz-topbar">
+        <div class="quiz-progress">
+          <div class="quiz-progress-bar" id="quiz-progress-bar"></div>
+        </div>
+        <div class="quiz-step-label" id="quiz-step-label">Pregunta 1 de 7</div>
+      </div>
+
+      <div id="quiz-steps">
+        <div class="quiz-step active" id="step-1">
+          <div class="modal-icon">🧭</div>
+          <h2 id="ruta-title">Tu hoja de ruta financiera</h2>
+          <p class="modal-subtitle">7 preguntas. Un plan orientativo adaptado a tu situación.</p>
+          <div class="quiz-question">¿Cuál es tu situación laboral actual?</div>
+          <div class="quiz-options">
+            <button class="quiz-option" data-key="empleo" data-value="empleado">Empleado por cuenta ajena</button>
+            <button class="quiz-option" data-key="empleo" data-value="autonomo">Autónomo / Freelance</button>
+            <button class="quiz-option" data-key="empleo" data-value="empresario">Empresario</button>
+            <button class="quiz-option" data-key="empleo" data-value="sin_trabajo">En búsqueda de empleo</button>
+            <button class="quiz-option" data-key="empleo" data-value="estudiante">Estudiante</button>
+          </div>
+          <button class="btn btn-primary quiz-next" data-next="1" disabled>Siguiente</button>
+        </div>
+
+        <div class="quiz-step" id="step-2">
+          <div class="quiz-question">¿Cuál es tu rango de ingresos mensuales netos?</div>
+          <div class="quiz-options">
+            <button class="quiz-option" data-key="ingresos" data-value="menos1000">Menos de 1.000€</button>
+            <button class="quiz-option" data-key="ingresos" data-value="1000_2000">Entre 1.000€ y 2.000€</button>
+            <button class="quiz-option" data-key="ingresos" data-value="2000_3500">Entre 2.000€ y 3.500€</button>
+            <button class="quiz-option" data-key="ingresos" data-value="mas3500">Más de 3.500€</button>
+          </div>
+          <button class="btn btn-primary quiz-next" data-next="2" disabled>Siguiente</button>
+        </div>
+
+        <div class="quiz-step" id="step-3">
+          <div class="quiz-question">¿Tienes deudas actualmente?</div>
+          <div class="quiz-options">
+            <button class="quiz-option" data-key="deudas" data-value="no">No tengo deudas</button>
+            <button class="quiz-option" data-key="deudas" data-value="hipoteca">Solo hipoteca</button>
+            <button class="quiz-option" data-key="deudas" data-value="coche">Préstamo de coche</button>
+            <button class="quiz-option" data-key="deudas" data-value="tarjetas">Tarjetas / deuda de consumo</button>
+            <button class="quiz-option" data-key="deudas" data-value="varias">Varias deudas</button>
+          </div>
+          <button class="btn btn-primary quiz-next" data-next="3" disabled>Siguiente</button>
+        </div>
+
+        <div class="quiz-step" id="step-4">
+          <div class="quiz-question">¿Tienes fondo de emergencia?</div>
+          <p class="quiz-hint">Dinero líquido para cubrir al menos entre 3 y 6 meses de gastos.</p>
+          <div class="quiz-options">
+            <button class="quiz-option" data-key="emergencia" data-value="no">No tengo nada ahorrado</button>
+            <button class="quiz-option" data-key="emergencia" data-value="poco">Menos de 1 mes</button>
+            <button class="quiz-option" data-key="emergencia" data-value="medio">Entre 1 y 3 meses</button>
+            <button class="quiz-option" data-key="emergencia" data-value="bien">Más de 3 meses</button>
+          </div>
+          <button class="btn btn-primary quiz-next" data-next="4" disabled>Siguiente</button>
+        </div>
+
+        <div class="quiz-step" id="step-5">
+          <div class="quiz-question">¿Inviertes actualmente?</div>
+          <div class="quiz-options">
+            <button class="quiz-option" data-key="inversion" data-value="no">No, no sé por dónde empezar</button>
+            <button class="quiz-option" data-key="inversion" data-value="pensando">Lo estoy pensando</button>
+            <button class="quiz-option" data-key="inversion" data-value="poco">Sí, algo en fondos o ETFs</button>
+            <button class="quiz-option" data-key="inversion" data-value="activo">Sí, tengo cartera diversificada</button>
+          </div>
+          <button class="btn btn-primary quiz-next" data-next="5" disabled>Siguiente</button>
+        </div>
+
+        <div class="quiz-step" id="step-6">
+          <div class="quiz-question">¿Cuál es tu principal objetivo financiero ahora mismo?</div>
+          <div class="quiz-options">
+            <button class="quiz-option" data-key="objetivo" data-value="salir_deudas">Salir de deudas</button>
+            <button class="quiz-option" data-key="objetivo" data-value="ahorrar">Ahorrar de verdad</button>
+            <button class="quiz-option" data-key="objetivo" data-value="invertir">Empezar a invertir</button>
+            <button class="quiz-option" data-key="objetivo" data-value="casa">Comprar vivienda</button>
+            <button class="quiz-option" data-key="objetivo" data-value="negocio">Montar un negocio</button>
+            <button class="quiz-option" data-key="objetivo" data-value="libertad">Libertad financiera</button>
+          </div>
+          <button class="btn btn-primary quiz-next" data-next="6" disabled>Siguiente</button>
+        </div>
+
+        <div class="quiz-step" id="step-7">
+          <div class="quiz-question">¿Cuánto tiempo puedes dedicar a tus finanzas cada semana?</div>
+          <div class="quiz-options">
+            <button class="quiz-option" data-key="tiempo" data-value="nada">Menos de 30 minutos</button>
+            <button class="quiz-option" data-key="tiempo" data-value="poco">Entre 30 min y 2 horas</button>
+            <button class="quiz-option" data-key="tiempo" data-value="medio">Entre 2 y 5 horas</button>
+            <button class="quiz-option" data-key="tiempo" data-value="mucho">Más de 5 horas</button>
+          </div>
+          <button class="btn btn-primary quiz-next" id="quiz-finish" disabled>Ver mi plan</button>
+        </div>
+      </div>
+
+      <div id="quiz-result" class="quiz-result" hidden>
+        <div class="result-top">
+          <div class="modal-icon">🎯</div>
+          <h2>Tu hoja de ruta personalizada</h2>
+          <p class="modal-subtitle" id="roadmap-level-label"></p>
+        </div>
+
+        <div class="result-pill" id="roadmap-level-badge"></div>
+
+        <div class="roadmap-steps" id="roadmap-steps-container"></div>
+
+        <div class="result-insight-box" id="roadmap-insight-box"></div>
+
+        <div class="assumption-note">
+          Esta hoja de ruta es orientativa y usa un modelo simplificado para priorizar tus siguientes pasos.
+        </div>
+
+        <button class="btn btn-secondary full" id="reset-quiz-btn">Repetir quiz</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL LIBERTAD -->
+  <div class="modal-overlay" id="modal-freedom" aria-hidden="true">
+    <div class="modal" role="dialog" aria-modal="true">
+      <button class="modal-close" data-close="freedom" aria-label="Cerrar modal">✕</button>
+      <div class="modal-header">
+        <div class="modal-icon">🚀</div>
+        <h2>Libertad financiera</h2>
+        <p class="modal-subtitle">Una estimación orientativa basada en ahorro, gastos y rentabilidad.</p>
+      </div>
+
+      <div class="form-grid">
+        <div class="form-group">
+          <label for="f-age">Tu edad actual</label>
+          <input type="number" id="f-age" placeholder="30" min="18" max="80" />
+        </div>
+        <div class="form-group">
+          <label for="f-income">Ingresos mensuales netos</label>
+          <div class="input-prefix"><span>€</span><input type="number" id="f-income" placeholder="2500" /></div>
+        </div>
+        <div class="form-group">
+          <label for="f-expenses">Gastos mensuales</label>
+          <div class="input-prefix"><span>€</span><input type="number" id="f-expenses" placeholder="1800" /></div>
+        </div>
+        <div class="form-group">
+          <label for="f-savings">Ahorros actuales</label>
+          <div class="input-prefix"><span>€</span><input type="number" id="f-savings" placeholder="10000" /></div>
+        </div>
+        <div class="form-group full">
+          <label for="f-return">Rentabilidad anual esperada</label>
+          <div class="input-suffix"><input type="number" id="f-return" placeholder="7" min="0" max="20" step="0.1" /><span>%</span></div>
+        </div>
+      </div>
+
+      <button class="btn btn-primary full" id="calc-freedom-btn">Calcular mi estimación</button>
+
+      <div class="results-box" id="result-freedom">
+        <div class="results-head">
+          <div class="results-kicker">Resultado principal</div>
+          <div class="result-main" id="r-freedom-years">—</div>
+          <div class="result-label">años estimados para alcanzar tu objetivo</div>
+        </div>
+
+        <div class="result-details">
+          <div class="result-detail-item"><div class="value" id="r-freedom-age">—</div><div class="label">Edad estimada</div></div>
+          <div class="result-detail-item"><div class="value" id="r-freedom-capital">—</div><div class="label">Capital objetivo</div></div>
+          <div class="result-detail-item"><div class="value" id="r-freedom-monthly">—</div><div class="label">Ahorro mensual</div></div>
+          <div class="result-detail-item"><div class="value" id="r-freedom-rate">—</div><div class="label">Tasa de ahorro</div></div>
+        </div>
+
+        <div class="result-insight" id="r-freedom-insight"></div>
+        <div class="assumption-note">Supuestos: regla del 4%, rentabilidad constante y aportación mensual fija. No incluye inflación ni impuestos.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL COCHE -->
+  <div class="modal-overlay" id="modal-car" aria-hidden="true">
+    <div class="modal" role="dialog" aria-modal="true">
+      <button class="modal-close" data-close="car" aria-label="Cerrar modal">✕</button>
+      <div class="modal-header">
+        <div class="modal-icon">🚗</div>
+        <h2>Coste real de tu coche</h2>
+        <p class="modal-subtitle">Una estimación más realista del impacto total de mantener tu vehículo.</p>
+      </div>
+
+      <div class="form-grid">
+        <div class="form-group">
+          <label for="c-price">Precio del coche</label>
+          <div class="input-prefix"><span>€</span><input type="number" id="c-price" placeholder="20000" /></div>
+        </div>
+        <div class="form-group">
+          <label for="c-insurance">Seguro anual</label>
+          <div class="input-prefix"><span>€</span><input type="number" id="c-insurance" placeholder="600" /></div>
+        </div>
+        <div class="form-group">
+          <label for="c-fuel">Combustible mensual</label>
+          <div class="input-prefix"><span>€</span><input type="number" id="c-fuel" placeholder="120" /></div>
+        </div>
+        <div class="form-group">
+          <label for="c-maintenance">Mantenimiento anual</label>
+          <div class="input-prefix"><span>€</span><input type="number" id="c-maintenance" placeholder="400" /></div>
+        </div>
+        <div class="form-group full">
+          <label for="c-years">Años que lo tendrás</label>
+          <input type="number" id="c-years" placeholder="5" min="1" max="20" />
+        </div>
+      </div>
+
+      <button class="btn btn-primary full" id="calc-car-btn">Calcular coste real</button>
+
+      <div class="results-box" id="result-car">
+        <div class="results-head">
+          <div class="results-kicker">Resultado principal</div>
+          <div class="result-main" id="r-car-total">—</div>
+          <div class="result-label">coste total estimado en el período</div>
+        </div>
+
+        <div class="result-details">
+          <div class="result-detail-item"><div class="value" id="r-car-year">—</div><div class="label">Coste por año</div></div>
+          <div class="result-detail-item"><div class="value" id="r-car-month">—</div><div class="label">Coste por mes</div></div>
+          <div class="result-detail-item"><div class="value" id="r-car-day">—</div><div class="label">Coste por día</div></div>
+          <div class="result-detail-item"><div class="value" id="r-car-km">—</div><div class="label">Coste por km</div></div>
+        </div>
+
+        <div class="result-insight" id="r-car-insight"></div>
+        <div class="assumption-note">Supuestos: depreciación simplificada, 15.000 km/año y costes medios orientativos.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL INVERSIÓN -->
+  <div class="modal-overlay" id="modal-invest" aria-hidden="true">
+    <div class="modal" role="dialog" aria-modal="true">
+      <button class="modal-close" data-close="invest" aria-label="Cerrar modal">✕</button>
+      <div class="modal-header">
+        <div class="modal-icon">📈</div>
+        <h2>Interés compuesto</h2>
+        <p class="modal-subtitle">Visualiza cómo puede crecer tu dinero si empiezas hoy.</p>
+      </div>
+
+      <div class="form-grid">
+        <div class="form-group">
+          <label for="i-initial">Capital inicial</label>
+          <div class="input-prefix"><span>€</span><input type="number" id="i-initial" placeholder="5000" /></div>
+        </div>
+        <div class="form-group">
+          <label for="i-monthly">Aportación mensual</label>
+          <div class="input-prefix"><span>€</span><input type="number" id="i-monthly" placeholder="200" /></div>
+        </div>
+        <div class="form-group">
+          <label for="i-return">Rentabilidad anual esperada</label>
+          <div class="input-suffix"><input type="number" id="i-return" placeholder="7" min="0" max="30" step="0.1" /><span>%</span></div>
+        </div>
+        <div class="form-group">
+          <label for="i-years">Años de inversión</label>
+          <input type="number" id="i-years" placeholder="20" min="1" max="60" />
+        </div>
+      </div>
+
+      <button class="btn btn-primary full" id="calc-invest-btn">Ver mi proyección</button>
+
+      <div class="results-box" id="result-invest">
+        <div class="results-head">
+          <div class="results-kicker">Resultado principal</div>
+          <div class="result-main" id="r-invest-total">—</div>
+          <div class="result-label">capital acumulado estimado</div>
+        </div>
+
+        <div class="result-details">
+          <div class="result-detail-item"><div class="value" id="r-invest-contributed">—</div><div class="label">Dinero aportado</div></div>
+          <div class="result-detail-item"><div class="value" id="r-invest-gains">—</div><div class="label">Ganancias estimadas</div></div>
+          <div class="result-detail-item"><div class="value" id="r-invest-multiplier">—</div><div class="label">Multiplicador</div></div>
+          <div class="result-detail-item"><div class="value" id="r-invest-monthly-income">—</div><div class="label">Renta mensual 4%</div></div>
+        </div>
+
+        <div class="result-insight" id="r-invest-insight"></div>
+        <div class="assumption-note">Supuestos: aportación constante, capitalización mensual y rentabilidad estable. No incluye inflación ni impuestos.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL ALQUILER VS COMPRA -->
+  <div class="modal-overlay" id="modal-rent" aria-hidden="true">
+    <div class="modal" role="dialog" aria-modal="true">
+      <button class="modal-close" data-close="rent" aria-label="Cerrar modal">✕</button>
+      <div class="modal-header">
+        <div class="modal-icon">🏠</div>
+        <h2>Alquilar o comprar</h2>
+        <p class="modal-subtitle">Una comparación orientativa del coste total según tus datos.</p>
+      </div>
+
+      <div class="form-grid">
+        <div class="form-group">
+          <label for="h-price">Precio del piso</label>
+          <div class="input-prefix"><span>€</span><input type="number" id="h-price" placeholder="250000" /></div>
+        </div>
+        <div class="form-group">
+          <label for="h-down">Ahorros para entrada</label>
+          <div class="input-prefix"><span>€</span><input type="number" id="h-down" placeholder="50000" /></div>
+        </div>
+        <div class="form-group">
+          <label for="h-rent">Alquiler equivalente mensual</label>
+          <div class="input-prefix"><span>€</span><input type="number" id="h-rent" placeholder="900" /></div>
+        </div>
+        <div class="form-group">
+          <label for="h-rate">Tipo de interés hipotecario</label>
+          <div class="input-suffix"><input type="number" id="h-rate" placeholder="3.5" min="0" max="12" step="0.1" /><span>%</span></div>
+        </div>
+        <div class="form-group full">
+          <label for="h-years">Años de hipoteca</label>
+          <input type="number" id="h-years" placeholder="30" min="5" max="40" />
+        </div>
+      </div>
+
+      <button class="btn btn-primary full" id="calc-rent-btn">Comparar escenario</button>
+
+      <div class="results-box" id="result-rent">
+        <div class="results-head">
+          <div class="results-kicker">Veredicto orientativo</div>
+          <div class="result-main" id="r-rent-verdict">—</div>
+          <div class="result-label" id="r-rent-verdict-label">según tus datos actuales</div>
+        </div>
+
+        <div class="result-details">
+          <div class="result-detail-item"><div class="value" id="r-rent-mortgage">—</div><div class="label">Cuota hipoteca</div></div>
+          <div class="result-detail-item"><div class="value" id="r-rent-total-cost">—</div><div class="label">Coste compra</div></div>
+          <div class="result-detail-item"><div class="value" id="r-rent-total-rent">—</div><div class="label">Coste alquiler</div></div>
+          <div class="result-detail-item"><div class="value" id="r-rent-break">—</div><div class="label">Punto equilibrio</div></div>
+        </div>
+
+        <div class="result-insight" id="r-rent-insight"></div>
+        <div class="assumption-note">Supuestos: modelo simplificado con IBI, gastos de compra y subida anual del alquiler. No incluye revalorización, comunidad ni coste de oportunidad.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL SUELDOS -->
+  <div class="modal-overlay" id="modal-sueldos" aria-hidden="true">
+    <div class="modal" role="dialog" aria-modal="true">
+      <button class="modal-close" data-close="sueldos" aria-label="Cerrar modal">✕</button>
+      <div class="modal-header">
+        <div class="modal-icon">💼</div>
+        <h2>Radiografía de sueldos</h2>
+        <p class="modal-subtitle">Estimación orientativa. No sustituye una base salarial real de mercado.</p>
+      </div>
+
+      <div class="form-grid">
+        <div class="form-group">
+          <label for="s-sector">Sector</label>
+          <select id="s-sector">
+            <option value="">Selecciona</option>
+            <option value="tech">Tecnología / IT</option>
+            <option value="marketing">Marketing / Comunicación</option>
+            <option value="finanzas">Finanzas / Banca</option>
+            <option value="salud">Salud / Sanidad</option>
+            <option value="educacion">Educación</option>
+            <option value="logistica">Logística / Transporte</option>
+            <option value="construccion">Construcción / Arquitectura</option>
+            <option value="hosteleria">Hostelería / Turismo</option>
+            <option value="legal">Legal / RRHH</option>
+            <option value="otro">Otro</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="s-ciudad">Ciudad</label>
+          <select id="s-ciudad">
+            <option value="">Selecciona</option>
+            <option value="madrid">Madrid</option>
+            <option value="barcelona">Barcelona</option>
+            <option value="valencia">Valencia</option>
+            <option value="sevilla">Sevilla</option>
+            <option value="bilbao">Bilbao / País Vasco</option>
+            <option value="zaragoza">Zaragoza</option>
+            <option value="malaga">Málaga</option>
+            <option value="otra">Otra ciudad</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="s-experiencia">Experiencia</label>
+          <select id="s-experiencia">
+            <option value="">Selecciona</option>
+            <option value="junior">Junior (0-2 años)</option>
+            <option value="medio">Medio (3-5 años)</option>
+            <option value="senior">Senior (6-10 años)</option>
+            <option value="experto">Experto (+10 años)</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="s-salario">Salario bruto anual</label>
+          <div class="input-prefix"><span>€</span><input type="number" id="s-salario" placeholder="28000" /></div>
+        </div>
+      </div>
+
+      <button class="btn btn-primary full" id="calc-sueldos-btn">Ver estimación</button>
+
+      <div class="results-box" id="result-sueldos">
+        <div class="results-head">
+          <div class="results-kicker">Posición orientativa</div>
+          <div class="result-main" id="r-sueldos-percentil">—</div>
+          <div class="result-label" id="r-sueldos-percentil-label">de profesionales con perfil similar</div>
+        </div>
+
+        <div class="result-details">
+          <div class="result-detail-item"><div class="value" id="r-sueldos-minimo">—</div><div class="label">Mínimo estimado</div></div>
+          <div class="result-detail-item"><div class="value" id="r-sueldos-mediana">—</div><div class="label">Mediana estimada</div></div>
+          <div class="result-detail-item"><div class="value" id="r-sueldos-maximo">—</div><div class="label">Máximo estimado</div></div>
+          <div class="result-detail-item"><div class="value" id="r-sueldos-neto">—</div><div class="label">Neto estimado/mes</div></div>
+        </div>
+
+        <div class="result-insight" id="r-sueldos-insight"></div>
+        <div class="assumption-note">Modelo salarial orientativo con rangos internos simplificados y estimación de neto no exacta.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL SIMULADOR -->
+  <div class="modal-overlay" id="modal-simulador" aria-hidden="true">
+    <div class="modal modal-simulator" role="dialog" aria-modal="true">
+      <button class="modal-close" data-close="simulador" aria-label="Cerrar modal">✕</button>
+
+      <div class="modal-header">
+        <div class="modal-icon">🧠</div>
+        <h2>Simulador de decisiones</h2>
+        <p class="modal-subtitle">Explora el impacto de actuar hoy… o esperar demasiado.</p>
+      </div>
+
+      <div class="simulator-selector" id="simulator-selector">
+        <button class="sim-scenario-card" data-scenario="negocio">
+          <div class="sim-scenario-icon">💼</div>
+          <div class="sim-scenario-title">¿Y si monto un negocio?</div>
+          <div class="sim-scenario-desc">Inversión, beneficio y tiempo para recuperar.</div>
+        </button>
+
+        <button class="sim-scenario-card" data-scenario="ahorro">
+          <div class="sim-scenario-icon">💰</div>
+          <div class="sim-scenario-title">¿Y si ahorro más cada mes?</div>
+          <div class="sim-scenario-desc">Visualiza el efecto acumulado de pequeños cambios.</div>
+        </button>
+
+        <button class="sim-scenario-card" data-scenario="inversion">
+          <div class="sim-scenario-icon">📈</div>
+          <div class="sim-scenario-title">¿Y si hubiera empezado antes?</div>
+          <div class="sim-scenario-desc">Calcula el coste real de retrasarte.</div>
+        </button>
+
+        <button class="sim-scenario-card" data-scenario="trabajo">
+          <div class="sim-scenario-icon">🚀</div>
+          <div class="sim-scenario-title">¿Y si cambio de trabajo?</div>
+          <div class="sim-scenario-desc">Cuánto vale realmente una mejora salarial.</div>
+        </button>
+      </div>
+
+      <div class="simulator-form" id="simulator-form" hidden>
+        <button class="sim-back-btn" id="sim-back-btn">← Cambiar escenario</button>
+        <div class="sim-scenario-header" id="sim-scenario-header"></div>
+        <div id="sim-fields"></div>
+        <button class="btn btn-primary full" id="run-simulation-btn">Simular escenario</button>
+      </div>
+
+      <div class="results-box" id="result-simulador">
+        <div class="results-head">
+          <div class="results-kicker">Resultado simulado</div>
+          <div class="result-main" id="r-sim-main">—</div>
+          <div class="result-label" id="r-sim-label"></div>
+        </div>
+
+        <div class="result-details" id="r-sim-details"></div>
+        <div class="result-insight" id="r-sim-insight"></div>
+        <div class="assumption-note">Simulación simplificada con fines orientativos. Los resultados reales dependen de muchas más variables.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TOAST -->
+  <div class="toast" id="toast"></div>
+
+  <!-- =========================
+  FOOTER LEGAL PREMIUM
+  ========================= -->
+  <footer class="legal-footer">
+    <div class="container legal-footer-inner">
+      <div class="legal-brand-block">
+        <div class="footer-brand">XTRA FOCUS</div>
+        <p class="legal-footer-text">
+          Herramientas visuales para entender mejor el impacto de tus decisiones financieras.
+        </p>
+        <p class="legal-footer-mini">
+          Madrid, España · <a href="mailto:xtrafocus.spain@gmail.com">xtrafocus.spain@gmail.com</a>
+        </p>
+      </div>
+    
+      <div class="legal-links-group">
+        <button class="legal-link-btn" data-legal-open="aviso">Aviso legal</button>
+        <button class="legal-link-btn" data-legal-open="privacidad">Política de privacidad</button>
+        <button class="legal-link-btn" data-legal-open="cookies">Política de cookies</button>
+        <button class="legal-link-btn" data-legal-open="disclaimer">Descargo financiero</button>
+        <button class="legal-link-btn" id="open-cookie-settings">Configurar cookies</button>
+      </div>
+    </div>
+  
+    <div class="container legal-footer-bottom">
+      <p>
+        © <span id="current-year"></span> Xtra Focus. Todos los derechos reservados.
+      </p>
+      <p>
+        Esta web ofrece información y simulaciones orientativas. No constituye asesoramiento financiero, fiscal, legal ni de inversión.
+      </p>
+    </div>
+  </footer>
+  
+  <!-- =========================
+  MODALES LEGALES
+  ========================= -->
+  
+  <div class="modal-overlay legal-modal-overlay" id="legal-aviso" aria-hidden="true">
+    <div class="modal legal-modal" role="dialog" aria-modal="true" aria-labelledby="legal-aviso-title">
+      <button class="modal-close" data-legal-close="aviso" aria-label="Cerrar">✕</button>
+      <div class="modal-header">
+        <div class="modal-icon">⚖️</div>
+        <h2 id="legal-aviso-title">Aviso legal</h2>
+        <p class="modal-subtitle">Información general del sitio web.</p>
+      </div>
+    
+      <div class="legal-content">
+        <h3>1. Titular del sitio web</h3>
+        <p>
+          En cumplimiento del deber de información, se hace constar que este sitio web, identificado bajo la marca
+          <strong>Xtra Focus</strong>, es un proyecto digital operado desde <strong>Madrid, España</strong>.
+        </p>
+        <p>
+          Para cualquier consulta legal o relativa al sitio web, puede contactarse a través del correo electrónico:
+          <strong>xtrafocus.spain@gmail.com</strong>.
+        </p>
+      
+        <h3>2. Objeto</h3>
+        <p>
+          El presente sitio web tiene como finalidad ofrecer contenido, simulaciones, calculadoras y herramientas
+          orientativas relacionadas con finanzas personales, toma de decisiones financieras, ahorro, inversión,
+          vivienda, trabajo y planificación económica.
+        </p>
+      
+        <h3>3. Condiciones de uso</h3>
+        <p>
+          El acceso y navegación por este sitio web atribuyen la condición de usuario e implican la aceptación de las
+          presentes condiciones de uso. El usuario se compromete a hacer un uso adecuado del contenido, de la
+          información y de las funcionalidades disponibles.
+        </p>
+      
+        <h3>4. Propiedad intelectual</h3>
+        <p>
+          Los textos, diseños, código, estructura, identidad visual y demás elementos del sitio web están protegidos
+          por la normativa aplicable en materia de propiedad intelectual e industrial. Queda prohibida su reproducción,
+          distribución o transformación sin autorización expresa del titular, salvo en los casos legalmente permitidos.
+        </p>
+      
+        <h3>5. Enlaces externos</h3>
+        <p>
+          Este sitio web puede incluir enlaces a páginas de terceros. Xtra Focus no se responsabiliza del contenido,
+          políticas, disponibilidad o prácticas de dichos sitios externos.
+        </p>
+      
+        <h3>6. Responsabilidad</h3>
+        <p>
+          Se procura que la información mostrada en esta web sea clara, útil y razonablemente actualizada. No obstante,
+          no se garantiza la ausencia de errores, la exactitud absoluta de los contenidos ni la disponibilidad continua
+          del sitio web.
+        </p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="modal-overlay legal-modal-overlay" id="legal-privacidad" aria-hidden="true">
+    <div class="modal legal-modal" role="dialog" aria-modal="true" aria-labelledby="legal-privacidad-title">
+      <button class="modal-close" data-legal-close="privacidad" aria-label="Cerrar">✕</button>
+      <div class="modal-header">
+        <div class="modal-icon">🔒</div>
+        <h2 id="legal-privacidad-title">Política de privacidad</h2>
+        <p class="modal-subtitle">Tratamiento de datos personales y privacidad.</p>
+      </div>
+    
+      <div class="legal-content">
+        <h3>1. Responsable</h3>
+        <p>
+          El responsable de este sitio web y, en su caso, del tratamiento de los datos personales vinculados a su uso,
+          es <strong>Xtra Focus</strong>, proyecto digital operado desde <strong>Madrid, España</strong>.
+        </p>
+        <p>
+          Correo de contacto: <strong>xtrafocus.spain@gmail.com</strong>
+        </p>
+      
+        <h3>2. Datos personales tratados</h3>
+        <p>
+          En el estado actual del sitio web, <strong>Xtra Focus no solicita formularios de contacto, no crea cuentas
+          de usuario y no recoge datos personales de forma directa</strong> a través de campos introducidos por el usuario.
+        </p>
+        <p>
+          No obstante, el uso de herramientas de analítica puede implicar el tratamiento limitado de determinados datos
+          técnicos o identificadores en línea, siempre sujeto al consentimiento del usuario cuando sea legalmente exigible.
+        </p>
+      
+        <h3>3. Finalidad del tratamiento</h3>
+        <p>
+          En caso de aceptarse cookies analíticas, la finalidad será medir el uso del sitio web, comprender de forma
+          agregada cómo navegan los usuarios y mejorar el contenido, diseño, rendimiento y experiencia general del sitio.
+        </p>
+      
+        <h3>4. Base jurídica</h3>
+        <p>
+          La base jurídica para el uso de cookies analíticas no necesarias será el <strong>consentimiento del usuario</strong>.
+          Si el usuario no presta dicho consentimiento, esas cookies no se activarán.
+        </p>
+      
+        <h3>5. Destinatarios y terceros</h3>
+        <p>
+          En caso de aceptación de cookies analíticas, determinados datos técnicos podrán ser tratados por
+          <strong>Google Analytics</strong>, servicio prestado por Google. Dicho tratamiento estará sujeto a las
+          condiciones y políticas del proveedor correspondiente.
+        </p>
+      
+        <h3>6. Conservación</h3>
+        <p>
+          La información relativa al consentimiento de cookies se conservará localmente en el navegador del usuario
+          durante el tiempo técnicamente necesario para recordar su preferencia, salvo que el usuario la elimine
+          manualmente o modifique su decisión.
+        </p>
+      
+        <h3>7. Derechos</h3>
+        <p>
+          En la medida en que resulte aplicable conforme a la normativa de protección de datos, el usuario podrá ejercer
+          sus derechos de acceso, rectificación, supresión, oposición, limitación del tratamiento y demás derechos
+          legalmente reconocidos escribiendo a <strong>xtrafocus.spain@gmail.com</strong>.
+        </p>
+      
+        <h3>8. Menores</h3>
+        <p>
+          Este sitio web no está específicamente dirigido a menores de edad y no pretende recabar datos personales de
+          menores de forma consciente.
+        </p>
+      
+        <h3>9. Cambios en esta política</h3>
+        <p>
+          Esta política podrá actualizarse para adaptarse a cambios legales, técnicos o funcionales del sitio web.
+        </p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="modal-overlay legal-modal-overlay" id="legal-cookies" aria-hidden="true">
+    <div class="modal legal-modal" role="dialog" aria-modal="true" aria-labelledby="legal-cookies-title">
+      <button class="modal-close" data-legal-close="cookies" aria-label="Cerrar">✕</button>
+      <div class="modal-header">
+        <div class="modal-icon">🍪</div>
+        <h2 id="legal-cookies-title">Política de cookies</h2>
+        <p class="modal-subtitle">Información sobre el uso de cookies en este sitio.</p>
+      </div>
+    
+      <div class="legal-content">
+        <h3>1. ¿Qué son las cookies?</h3>
+        <p>
+          Las cookies son pequeños archivos que se almacenan en el dispositivo del usuario cuando visita una página web.
+          Pueden servir para funciones técnicas, recordar preferencias o analizar el uso del sitio.
+        </p>
+      
+        <h3>2. Qué tipos de cookies usa este sitio</h3>
+        <p>En este momento, este sitio puede utilizar:</p>
+        <ul>
+          <li><strong>Cookies técnicas o necesarias:</strong> imprescindibles para el funcionamiento básico del sitio.</li>
+          <li><strong>Cookies analíticas:</strong> únicamente si el usuario presta su consentimiento expreso.</li>
+        </ul>
+      
+        <h3>3. Cookies analíticas</h3>
+        <p>
+          Si el usuario acepta las cookies analíticas, este sitio podrá utilizar <strong>Google Analytics</strong> para
+          obtener estadísticas agregadas de uso, como páginas visitadas, tiempo de navegación, tipo de dispositivo,
+          rendimiento general y comportamiento anónimo o seudonimizado del tráfico.
+        </p>
+      
+        <h3>4. Base de legitimación</h3>
+        <p>
+          Las cookies analíticas no necesarias se instalarán únicamente tras la aceptación expresa del usuario mediante
+          el banner o panel de configuración de cookies.
+        </p>
+      
+        <h3>5. Cómo gestionar las cookies</h3>
+        <p>
+          El usuario puede aceptar, rechazar o modificar sus preferencias de cookies en cualquier momento mediante la
+          opción <strong>“Configurar cookies”</strong> disponible en el pie de página.
+        </p>
+      
+        <h3>6. Eliminación de cookies</h3>
+        <p>
+          Además, el usuario puede eliminar o bloquear cookies desde la configuración de su navegador.
+        </p>
+      
+        <h3>7. Cambios</h3>
+        <p>
+          Esta política de cookies podrá actualizarse si se incorporan nuevas herramientas, servicios de terceros o
+          cambios normativos.
+        </p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="modal-overlay legal-modal-overlay" id="legal-disclaimer" aria-hidden="true">
+    <div class="modal legal-modal" role="dialog" aria-modal="true" aria-labelledby="legal-disclaimer-title">
+      <button class="modal-close" data-legal-close="disclaimer" aria-label="Cerrar">✕</button>
+      <div class="modal-header">
+        <div class="modal-icon">📉</div>
+        <h2 id="legal-disclaimer-title">Descargo de responsabilidad financiera</h2>
+        <p class="modal-subtitle">Importante antes de utilizar las herramientas del sitio.</p>
+      </div>
+    
+      <div class="legal-content">
+        <h3>1. Finalidad informativa y orientativa</h3>
+        <p>
+          Los contenidos, simuladores, cálculos, comparativas y herramientas ofrecidos en Xtra Focus tienen una finalidad
+          exclusivamente <strong>informativa, educativa y orientativa</strong>.
+        </p>
+      
+        <h3>2. No constituye asesoramiento profesional</h3>
+        <p>
+          Nada de lo contenido en este sitio web constituye asesoramiento financiero, de inversión, fiscal, contable,
+          hipotecario, jurídico o profesional personalizado.
+        </p>
+      
+        <h3>3. Supuestos simplificados</h3>
+        <p>
+          Los resultados mostrados por las herramientas se basan en modelos simplificados, hipótesis generales y datos
+          introducidos por el usuario, por lo que no garantizan exactitud completa ni resultados futuros reales.
+        </p>
+      
+        <h3>4. Responsabilidad del usuario</h3>
+        <p>
+          Cualquier decisión tomada a partir de la información o simulaciones del sitio web será responsabilidad exclusiva
+          del usuario. Antes de adoptar decisiones económicas relevantes, se recomienda contrastar la información y, en su
+          caso, acudir a un profesional cualificado.
+        </p>
+      
+        <h3>5. No garantía de resultados</h3>
+        <p>
+          Xtra Focus no garantiza rendimientos, ahorros, plazos, impactos económicos ni resultados futuros derivados del
+          uso de las herramientas del sitio.
+        </p>
+      </div>
+    </div>
+  </div>
+  
+  <!-- =========================
+  BANNER / PANEL DE COOKIES
+  ========================= -->
+  <div class="cookie-banner" id="cookie-banner" aria-live="polite" hidden>
+    <div class="cookie-banner-inner">
+      <div class="cookie-banner-copy">
+        <div class="cookie-banner-title">Tu privacidad, con control real</div>
+        <p>
+          Utilizamos cookies técnicas necesarias y, solo si lo aceptas, cookies analíticas para entender el uso del sitio
+          y mejorar la experiencia. Puedes aceptar, rechazar o configurar tus preferencias.
+        </p>
+      </div>
+    
+      <div class="cookie-banner-actions">
+        <button class="btn btn-secondary" id="cookie-reject">Rechazar</button>
+        <button class="btn btn-ghost" id="cookie-configure">Configurar</button>
+        <button class="btn btn-primary" id="cookie-accept">Aceptar</button>
+      </div>
+    </div>
+  </div>
+  
+  <div class="cookie-panel" id="cookie-panel" hidden>
+    <div class="cookie-panel-card">
+      <div class="cookie-panel-head">
+        <h3>Preferencias de cookies</h3>
+        <button class="cookie-panel-close" id="cookie-panel-close" aria-label="Cerrar">✕</button>
+      </div>
+    
+      <div class="cookie-option">
+        <div>
+          <strong>Cookies técnicas</strong>
+          <p>Necesarias para el funcionamiento básico del sitio. Siempre activas.</p>
+        </div>
+        <label class="switch disabled">
+          <input type="checkbox" checked disabled />
+          <span></span>
+        </label>
+      </div>
+    
+      <div class="cookie-option">
+        <div>
+          <strong>Cookies analíticas</strong>
+          <p>Permiten medir el uso de la web con Google Analytics, solo si das tu consentimiento.</p>
+        </div>
+        <label class="switch">
+          <input type="checkbox" id="analytics-consent-toggle" />
+          <span></span>
+        </label>
+      </div>
+    
+      <div class="cookie-panel-actions">
+        <button class="btn btn-secondary" id="cookie-save-selection">Guardar selección</button>
+        <button class="btn btn-primary" id="cookie-accept-all-panel">Aceptar analíticas</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script> 
+  <script src="cookies.js"></script>
+</body>
+</html>
